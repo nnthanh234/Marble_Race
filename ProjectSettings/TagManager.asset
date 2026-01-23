@@ -1,0 +1,615 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Map
+  - Player
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Algeria
+    uniqueID: 2794909835
+    locked: 0
+  - name: Angola
+    uniqueID: 2438297499
+    locked: 0
+  - name: Benin
+    uniqueID: 2323973081
+    locked: 0
+  - name: Botswana
+    uniqueID: 484621421
+    locked: 0
+  - name: Burkina Faso
+    uniqueID: 172484981
+    locked: 0
+  - name: Burundi
+    uniqueID: 1217990671
+    locked: 0
+  - name: Cameroon
+    uniqueID: 625151481
+    locked: 0
+  - name: Cape Verde
+    uniqueID: 650192751
+    locked: 0
+  - name: Central African Republic
+    uniqueID: 3502668957
+    locked: 0
+  - name: Chad
+    uniqueID: 4008161951
+    locked: 0
+  - name: Comoros
+    uniqueID: 643426333
+    locked: 0
+  - name: "C\xF4te d'Ivoire"
+    uniqueID: 1179689807
+    locked: 0
+  - name: Democratic Republic of the Congo
+    uniqueID: 3443355219
+    locked: 0
+  - name: Djibouti
+    uniqueID: 2015456237
+    locked: 0
+  - name: Egypt
+    uniqueID: 1290680019
+    locked: 0
+  - name: Equatorial Guinea
+    uniqueID: 4105490647
+    locked: 0
+  - name: Eritrea
+    uniqueID: 770988693
+    locked: 0
+  - name: Eswatini
+    uniqueID: 2414381289
+    locked: 0
+  - name: Ethiopia
+    uniqueID: 573937051
+    locked: 0
+  - name: Gabon
+    uniqueID: 2145018533
+    locked: 0
+  - name: Gambia
+    uniqueID: 2328307071
+    locked: 0
+  - name: Ghana
+    uniqueID: 32826725
+    locked: 0
+  - name: Guinea
+    uniqueID: 1534284631
+    locked: 0
+  - name: Guinea Bissau
+    uniqueID: 109826245
+    locked: 0
+  - name: Kenya
+    uniqueID: 2622817417
+    locked: 0
+  - name: Lesotho
+    uniqueID: 438940147
+    locked: 0
+  - name: Liberia
+    uniqueID: 934834549
+    locked: 0
+  - name: Libya
+    uniqueID: 2226098083
+    locked: 0
+  - name: Madagascar
+    uniqueID: 1472166067
+    locked: 0
+  - name: Malawi
+    uniqueID: 4123233283
+    locked: 0
+  - name: Mali
+    uniqueID: 1384432355
+    locked: 0
+  - name: Mauritania
+    uniqueID: 2868298517
+    locked: 0
+  - name: Mauritius
+    uniqueID: 30165537
+    locked: 0
+  - name: Morocco
+    uniqueID: 1810051483
+    locked: 0
+  - name: Mozambique
+    uniqueID: 414784971
+    locked: 0
+  - name: Namibia
+    uniqueID: 2818192757
+    locked: 0
+  - name: Niger
+    uniqueID: 2489110309
+    locked: 0
+  - name: Nigeria
+    uniqueID: 2283885979
+    locked: 0
+  - name: Republic of the Congo
+    uniqueID: 2733407193
+    locked: 0
+  - name: Somalia
+    uniqueID: 4226621473
+    locked: 0
+  - name: South Africa
+    uniqueID: 1915721021
+    locked: 0
+  - name: South Sudan
+    uniqueID: 1607019135
+    locked: 0
+  - name: Sudan
+    uniqueID: 1213484941
+    locked: 0
+  - name: Tanzania
+    uniqueID: 1241711495
+    locked: 0
+  - name: Togo
+    uniqueID: 2109530605
+    locked: 0
+  - name: Tunisia
+    uniqueID: 401473347
+    locked: 0
+  - name: Uganda
+    uniqueID: 1529507355
+    locked: 0
+  - name: Zambia
+    uniqueID: 2600196387
+    locked: 0
+  - name: Zimbabwe
+    uniqueID: 2776564637
+    locked: 0
+  - name: Antigua and Barbuda
+    uniqueID: 3260441707
+    locked: 0
+  - name: Argentina
+    uniqueID: 295290467
+    locked: 0
+  - name: Bahamas
+    uniqueID: 53465635
+    locked: 0
+  - name: Bandera de Bolivia
+    uniqueID: 2077960151
+    locked: 0
+  - name: Barbados
+    uniqueID: 339682553
+    locked: 0
+  - name: Belize
+    uniqueID: 408670133
+    locked: 0
+  - name: Brazil
+    uniqueID: 1353156787
+    locked: 0
+  - name: Canada
+    uniqueID: 115245295
+    locked: 0
+  - name: Chile
+    uniqueID: 3861660367
+    locked: 0
+  - name: Colombia
+    uniqueID: 2740148567
+    locked: 0
+  - name: Costa Rica
+    uniqueID: 1333760715
+    locked: 0
+  - name: Cuba
+    uniqueID: 1811528601
+    locked: 0
+  - name: Dominica
+    uniqueID: 3077684669
+    locked: 0
+  - name: Dominican Republic
+    uniqueID: 1504581963
+    locked: 0
+  - name: Ecuador
+    uniqueID: 2297894665
+    locked: 0
+  - name: El Salvador
+    uniqueID: 2769339241
+    locked: 0
+  - name: Grenada
+    uniqueID: 215202811
+    locked: 0
+  - name: Guatemala
+    uniqueID: 1423898317
+    locked: 0
+  - name: Guyana
+    uniqueID: 2078709887
+    locked: 0
+  - name: Haiti
+    uniqueID: 1745983261
+    locked: 0
+  - name: Honduras
+    uniqueID: 3865777169
+    locked: 0
+  - name: Jamaica
+    uniqueID: 3542913723
+    locked: 0
+  - name: Mexico
+    uniqueID: 2805594595
+    locked: 0
+  - name: Nicaragua
+    uniqueID: 1540061769
+    locked: 0
+  - name: Panama
+    uniqueID: 890285067
+    locked: 0
+  - name: Paraguay
+    uniqueID: 3857305635
+    locked: 0
+  - name: Peru
+    uniqueID: 3664534895
+    locked: 0
+  - name: Saint Kitts and Nevis
+    uniqueID: 3512103449
+    locked: 0
+  - name: Saint Lucia
+    uniqueID: 1741622753
+    locked: 0
+  - name: Saint Vincent and Grenadines
+    uniqueID: 689478233
+    locked: 0
+  - name: Suriname
+    uniqueID: 3366670841
+    locked: 0
+  - name: Trinidad and Tobago
+    uniqueID: 3556273275
+    locked: 0
+  - name: United States
+    uniqueID: 1941413525
+    locked: 0
+  - name: Uruguay
+    uniqueID: 1684547355
+    locked: 0
+  - name: Venezuela
+    uniqueID: 4155294253
+    locked: 0
+  - name: Afghanistan
+    uniqueID: 1148342123
+    locked: 0
+  - name: Armenia
+    uniqueID: 3510207269
+    locked: 0
+  - name: Azerbaijan
+    uniqueID: 2937550413
+    locked: 0
+  - name: Bahrain
+    uniqueID: 2353085133
+    locked: 0
+  - name: Bangladesh
+    uniqueID: 573412013
+    locked: 0
+  - name: Bhutan
+    uniqueID: 3213663057
+    locked: 0
+  - name: Brunei
+    uniqueID: 1273995017
+    locked: 0
+  - name: Cambodia
+    uniqueID: 2827524075
+    locked: 0
+  - name: China
+    uniqueID: 128515553
+    locked: 0
+  - name: Cyprus
+    uniqueID: 1495935425
+    locked: 0
+  - name: East Timor
+    uniqueID: 240431359
+    locked: 0
+  - name: Georgia
+    uniqueID: 2191671829
+    locked: 0
+  - name: India
+    uniqueID: 450225343
+    locked: 0
+  - name: Indonesia
+    uniqueID: 1048959035
+    locked: 0
+  - name: Iran
+    uniqueID: 3087983133
+    locked: 0
+  - name: Iraq
+    uniqueID: 657714133
+    locked: 0
+  - name: Israel
+    uniqueID: 2526454609
+    locked: 0
+  - name: Japan
+    uniqueID: 369616549
+    locked: 0
+  - name: Jordan
+    uniqueID: 2903383041
+    locked: 0
+  - name: Kazakhstan
+    uniqueID: 291093975
+    locked: 0
+  - name: Kuwait
+    uniqueID: 3218786533
+    locked: 0
+  - name: Kyrgyzstan
+    uniqueID: 1422741361
+    locked: 0
+  - name: Laos
+    uniqueID: 1220095931
+    locked: 0
+  - name: Lebanon
+    uniqueID: 2439011007
+    locked: 0
+  - name: Malaysia
+    uniqueID: 461664407
+    locked: 0
+  - name: Maldives
+    uniqueID: 2431692955
+    locked: 0
+  - name: Mongolia
+    uniqueID: 720673331
+    locked: 0
+  - name: Myanmar
+    uniqueID: 2284753173
+    locked: 0
+  - name: Nepal
+    uniqueID: 3284335465
+    locked: 0
+  - name: North Korea
+    uniqueID: 1161712885
+    locked: 0
+  - name: Oman
+    uniqueID: 1045056053
+    locked: 0
+  - name: Pakistan
+    uniqueID: 595711481
+    locked: 0
+  - name: Palestine
+    uniqueID: 1628419269
+    locked: 0
+  - name: Philippines
+    uniqueID: 1911510221
+    locked: 0
+  - name: Qatar
+    uniqueID: 1011920293
+    locked: 0
+  - name: Saudi Arabia
+    uniqueID: 74196813
+    locked: 0
+  - name: Singapore
+    uniqueID: 2268263527
+    locked: 0
+  - name: South Korea
+    uniqueID: 1783899415
+    locked: 0
+  - name: Sri Lanka
+    uniqueID: 2113292543
+    locked: 0
+  - name: Syria
+    uniqueID: 3547482365
+    locked: 0
+  - name: Tajikistan
+    uniqueID: 3136910085
+    locked: 0
+  - name: Thailand
+    uniqueID: 2899755223
+    locked: 0
+  - name: Turkey
+    uniqueID: 217370695
+    locked: 0
+  - name: Turkmenistan
+    uniqueID: 1605864041
+    locked: 0
+  - name: United Arab Emirates
+    uniqueID: 157390081
+    locked: 0
+  - name: Uzbekistan
+    uniqueID: 1848911447
+    locked: 0
+  - name: Vietnam
+    uniqueID: 3128856279
+    locked: 0
+  - name: Yemen
+    uniqueID: 806208957
+    locked: 0
+  - name: Albania
+    uniqueID: 579149545
+    locked: 0
+  - name: Andorra
+    uniqueID: 14405131
+    locked: 0
+  - name: Austria
+    uniqueID: 967406677
+    locked: 0
+  - name: "Bandera de Espa\xF1a"
+    uniqueID: 3781709585
+    locked: 0
+  - name: Belarus
+    uniqueID: 58537707
+    locked: 0
+  - name: Belgium
+    uniqueID: 2950954767
+    locked: 0
+  - name: Bosnia and Herzegovina
+    uniqueID: 4165242079
+    locked: 0
+  - name: Bulgaria
+    uniqueID: 1987206295
+    locked: 0
+  - name: Croatia
+    uniqueID: 3807296405
+    locked: 0
+  - name: Czech Republic
+    uniqueID: 1040693555
+    locked: 0
+  - name: Denmark
+    uniqueID: 2292321961
+    locked: 0
+  - name: Estonia
+    uniqueID: 428137717
+    locked: 0
+  - name: Finland
+    uniqueID: 968022877
+    locked: 0
+  - name: France
+    uniqueID: 3463221557
+    locked: 0
+  - name: Germany
+    uniqueID: 3434780667
+    locked: 0
+  - name: Greece
+    uniqueID: 922161821
+    locked: 0
+  - name: Hungary
+    uniqueID: 2060187075
+    locked: 0
+  - name: Iceland
+    uniqueID: 396003301
+    locked: 0
+  - name: Ireland
+    uniqueID: 1663530075
+    locked: 0
+  - name: Italy
+    uniqueID: 4288505767
+    locked: 0
+  - name: Kosovo
+    uniqueID: 3720036373
+    locked: 0
+  - name: Latvia
+    uniqueID: 3718683379
+    locked: 0
+  - name: Liechtenstein
+    uniqueID: 733976663
+    locked: 0
+  - name: Lithuania
+    uniqueID: 2248746829
+    locked: 0
+  - name: Luxembourg
+    uniqueID: 3777828691
+    locked: 0
+  - name: Malta
+    uniqueID: 2851764931
+    locked: 0
+  - name: Moldova
+    uniqueID: 1368500941
+    locked: 0
+  - name: Monaco
+    uniqueID: 473357061
+    locked: 0
+  - name: Montenegro
+    uniqueID: 1770826987
+    locked: 0
+  - name: Netherlands
+    uniqueID: 2203816729
+    locked: 0
+  - name: North Macedonia
+    uniqueID: 2681881913
+    locked: 0
+  - name: Norway
+    uniqueID: 871442167
+    locked: 0
+  - name: Poland
+    uniqueID: 3250780545
+    locked: 0
+  - name: Portugal
+    uniqueID: 3952487849
+    locked: 0
+  - name: Romania
+    uniqueID: 2314785333
+    locked: 0
+  - name: Russia
+    uniqueID: 1447103667
+    locked: 0
+  - name: San Marino
+    uniqueID: 3015731817
+    locked: 0
+  - name: Serbia
+    uniqueID: 1511446975
+    locked: 0
+  - name: Slovakia
+    uniqueID: 1822871715
+    locked: 0
+  - name: Slovenia
+    uniqueID: 3335798315
+    locked: 0
+  - name: Sweden
+    uniqueID: 2075593051
+    locked: 0
+  - name: Switzerland
+    uniqueID: 197526199
+    locked: 0
+  - name: Ukraine
+    uniqueID: 263808527
+    locked: 0
+  - name: United Kingdom
+    uniqueID: 4236554049
+    locked: 0
+  - name: Vatican City
+    uniqueID: 3291299739
+    locked: 0
+  - name: Australia
+    uniqueID: 6549659
+    locked: 0
+  - name: Federated States of Micronesia
+    uniqueID: 3238642327
+    locked: 0
+  - name: Fiji
+    uniqueID: 1650464503
+    locked: 0
+  - name: Kiribati
+    uniqueID: 1206430997
+    locked: 0
+  - name: Nauru
+    uniqueID: 4210621745
+    locked: 0
+  - name: New Zealand
+    uniqueID: 2425034233
+    locked: 0
+  - name: Palau
+    uniqueID: 1169314133
+    locked: 0
+  - name: Papua New Guinea
+    uniqueID: 579915101
+    locked: 0
+  - name: Samoa
+    uniqueID: 1768282931
+    locked: 0
+  - name: Solomon Islands
+    uniqueID: 1889848481
+    locked: 0
+  - name: Tonga
+    uniqueID: 2351086615
+    locked: 0
+  - name: Tuvalu
+    uniqueID: 2074931363
+    locked: 0
+  - name: Vanuatu
+    uniqueID: 3540493569
+    locked: 0
+  m_RenderingLayers:
+  - Default
