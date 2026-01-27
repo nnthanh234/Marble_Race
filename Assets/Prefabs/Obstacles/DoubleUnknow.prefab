@@ -76,6 +76,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   speedMove: 10
   isRight: 1
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
   distance: 4
 --- !u!1 &1804221171626818183
 GameObject:
@@ -670,7 +673,7 @@ MonoBehaviour:
   m_Modifiers: []
   m_ColliderSegment:
   - {x: -7.21618, y: -2.112997}
-  - {x: -5.567396, y: 3.8568792}
+  - {x: -5.6125894, y: 3.8689883}
   - {x: 5.6570683, y: 0.8500266}
   - {x: 4.833569, y: -0.5808941}
   - {x: 4.4958887, y: -0.63030875}
@@ -723,7 +726,7 @@ EdgeCollider2D:
   m_EdgeRadius: 0
   m_Points:
   - {x: -7.21618, y: -2.112997}
-  - {x: -5.567396, y: 3.8568792}
+  - {x: -5.6125894, y: 3.8689883}
   - {x: 5.6570683, y: 0.8500266}
   - {x: 4.833569, y: -0.5808941}
   - {x: 4.4958887, y: -0.63030875}

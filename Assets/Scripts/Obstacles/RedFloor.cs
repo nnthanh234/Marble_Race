@@ -12,7 +12,12 @@ public class RedFloor : MonoBehaviour
         {
             if (col.gameObject.TryGetComponent(out SpriteRenderer render))
             {
+                col.gameObject.GetComponent<TrailRenderer>().enabled = false;
+
                 UIResult.Instance.ShowResult(render);
+
+                BallSpawner.Instance.RemoveFlag(render);
+
             }
         }
     }

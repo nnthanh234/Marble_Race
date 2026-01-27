@@ -9,7 +9,6 @@ public class ObstaclesRotate : MonoBehaviour
 
     private Rigidbody2D rig;
 
-
     private void Awake()
     {
         rig = GetComponent<Rigidbody2D>();

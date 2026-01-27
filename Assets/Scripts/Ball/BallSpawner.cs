@@ -24,7 +24,7 @@ public class BallSpawner : Singleton<BallSpawner>
         flags.Clear();
         flags.AddRange(lsFlag);
 
-        for (int i = 0; i < ballCount; i++)
+        for (int i = 0; i < lsFlag.Count; i++)
         {
             BallInfo ball = null;
 
@@ -75,6 +75,17 @@ public class BallSpawner : Singleton<BallSpawner>
         for (int i = 0; i < GameManager.Instance.BallPool.Count; i++)
         {
             GameManager.Instance.BallPool[i].gameObject.SetActive(false);
+        }
+    }
+    public void RemoveFlag(SpriteRenderer render)
+    {
+        for (int i = 0; i < lsFlag.Count; i++)
+        {
+            if (lsFlag[i].name == render.sprite.name)
+            {
+                lsFlag.RemoveAt(i);
+                break;
+            }
         }
     }
 }

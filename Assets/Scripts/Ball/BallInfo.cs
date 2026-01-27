@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using static UnityEditor.U2D.ScriptablePacker;
 
 public class BallInfo : MonoBehaviour
 {
@@ -18,6 +17,8 @@ public class BallInfo : MonoBehaviour
 
         sprRender.sortingLayerName = NameBall;
         mask.frontSortingLayerID = SortingLayer.NameToID(NameBall);
+
+        gameObject.GetComponent<TrailRenderer>().enabled = transform;
     }
     public static string RemoveSuffix(string name) { const string suffix = "_0"; return name.EndsWith(suffix) ? name.Substring(0, name.Length - suffix.Length) : name; }
 }
