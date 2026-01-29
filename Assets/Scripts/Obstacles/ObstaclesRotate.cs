@@ -6,6 +6,8 @@ public class ObstaclesRotate : MonoBehaviour
     private float rotationSpeed = 300f;
     [SerializeField]
     private LayerMask playerLayer;
+    [SerializeField]
+    private bool addForce = true;
 
     private Rigidbody2D rig;
 
@@ -19,6 +21,9 @@ public class ObstaclesRotate : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D col)
     {
+        if (addForce == false)
+            return;
+
         if (((1 << col.gameObject.layer) & playerLayer) != 0) 
         {
             Rigidbody2D ballRb = col.gameObject.GetComponent<Rigidbody2D>();

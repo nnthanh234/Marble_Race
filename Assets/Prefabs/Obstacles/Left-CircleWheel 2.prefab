@@ -670,7 +670,6 @@ GameObject:
   - component: {fileID: 8847551492803275185}
   - component: {fileID: 994368438025667240}
   - component: {fileID: 5232193624185245026}
-  - component: {fileID: 6134549384280940583}
   m_Layer: 6
   m_Name: YelloCircle 2
   m_TagString: Untagged
@@ -803,21 +802,6 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
---- !u!114 &6134549384280940583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8124880289530400089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b1641af78fa3484f99239d0331fbf2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BlueCircle
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 128
 --- !u!1 &8546600092641194805
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,7 +813,6 @@ GameObject:
   - component: {fileID: 6643372157674070419}
   - component: {fileID: 3039869894390463675}
   - component: {fileID: 8183094306138978802}
-  - component: {fileID: 3807898172487030002}
   - component: {fileID: 546533721313797231}
   m_Layer: 6
   m_Name: YelloCircle 2
@@ -948,21 +931,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.50000006
---- !u!114 &3807898172487030002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8546600092641194805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b1641af78fa3484f99239d0331fbf2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BlueCircle
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 128
 --- !u!114 &546533721313797231
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2684439764304615111}
   - component: {fileID: 2106584288519713871}
   - component: {fileID: 7175090582970990853}
-  - component: {fileID: 5207565737658251449}
+  - component: {fileID: -8250685542353732480}
   m_Layer: 0
   m_Name: RightHexagonal
   m_TagString: Untagged
@@ -261,7 +261,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5207565737658251449
+--- !u!114 &-8250685542353732480
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -270,10 +270,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7712683582261804804}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986095a92adcb58409c01eaae4e6bdd5, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f4f7d712765bad4d916221dbd5e6f20, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Plus
+  m_EditorClassIdentifier: Assembly-CSharp::PlusTwo
   speed: -200
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 128

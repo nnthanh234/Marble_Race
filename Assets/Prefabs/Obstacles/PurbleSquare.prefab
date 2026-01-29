@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4619549240853631557}
   - component: {fileID: 5204858728703327733}
   - component: {fileID: 8181650892147636205}
-  - component: {fileID: 5540935469200083791}
+  - component: {fileID: 1288502401510040420}
   m_Layer: 0
   m_Name: PurbleSquare
   m_TagString: Untagged
@@ -167,7 +167,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5540935469200083791
+--- !u!114 &1288502401510040420
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,9 +176,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8791878906578445381}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986095a92adcb58409c01eaae4e6bdd5, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f4f7d712765bad4d916221dbd5e6f20, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Plus
+  m_EditorClassIdentifier: '::'
   speed: -100
   playerLayer:
     serializedVersion: 2

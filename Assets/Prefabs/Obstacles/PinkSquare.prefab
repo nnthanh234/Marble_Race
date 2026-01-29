@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 472807113865656584}
   - component: {fileID: 4483920696431258009}
   - component: {fileID: 3190518652222649974}
-  - component: {fileID: 907843430166150305}
+  - component: {fileID: 8350890986782761938}
   m_Layer: 0
   m_Name: PinkSquare
   m_TagString: Untagged
@@ -167,7 +167,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &907843430166150305
+--- !u!114 &8350890986782761938
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,9 +176,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 297232229953255182}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986095a92adcb58409c01eaae4e6bdd5, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f4f7d712765bad4d916221dbd5e6f20, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Plus
+  m_EditorClassIdentifier: Assembly-CSharp::PlusTwo
   speed: 100
   playerLayer:
     serializedVersion: 2

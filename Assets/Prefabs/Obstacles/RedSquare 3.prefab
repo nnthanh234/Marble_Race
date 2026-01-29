@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7584779445260761538}
   - component: {fileID: 2433489882738976939}
   - component: {fileID: 4968478069651507343}
+  - component: {fileID: -1726106680652900731}
   m_Layer: 6
   m_Name: RedSquare 3
   m_TagString: Untagged
@@ -154,3 +155,20 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
+--- !u!111 &-1726106680652900731
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508373320361993876}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: 2a343385fb24f4a499be6923c16cf925, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 2a343385fb24f4a499be6923c16cf925, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
