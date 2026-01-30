@@ -27,7 +27,6 @@ public class DoubleUnknow : MonoBehaviour
         startX = rb.position.x;
         direction = isRight ? 1 : -1;
     }
-
     void Update()
     {
         float newX = rb.position.x + (speedMove * direction * Time.deltaTime);
@@ -42,7 +41,6 @@ public class DoubleUnknow : MonoBehaviour
             newX = startX - distance;
             direction = 1;
         }
-
         rb.MovePosition(new Vector2(newX, rb.position.y));
     }
     private void OnCollisionEnter2D(Collision2D col)

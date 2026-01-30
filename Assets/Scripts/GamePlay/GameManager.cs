@@ -1,4 +1,6 @@
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using UnityEngine;
 
@@ -15,24 +17,50 @@ public class GameManager : Singleton<GameManager>
     [SerializeField]
     private bool isTest;
     [SerializeField]
-    private int mapIndexTest;
+    private int mapIndexTest = 0;
 
     public int CurrentMap { get; private set; }
-
     public List<BallInfo> BallPool { get; private set; }
     public int MapIndex => round - CurrentMap + 1;
+
+    private List<int> lsMapIndex;
 
 
     private void Awake()
     {
         BallPool = new List<BallInfo>();
+
+        lsMapIndex = new List<int>();
+        for (int i = 1; i <= round; i++)
+        {
+            lsMapIndex.Add(i);
+        }
+
+        lsMapIndex = lsMapIndex.OrderBy(x => Random.value).ToList();
     }
     public async void StartNewMap()
     {
+        if (CurrentMap >= round - 1)
+        {
+            int activeCount = 0;
+            GameObject ball = null;
+            for (int i = 0; i < BallPool.Count; i++)
+            {
+                if (BallPool[i].gameObject.activeInHierarchy)
+                {
+                    ball = BallPool[i].gameObject;
+                    activeCount++;
+                }
+            }
+            if (activeCount == 1)
+            {
+                UIResult.Instance.ShowWinner(ball.GetComponent<SpriteRenderer>());
+                return;
+            }
+        }
+
         redWall.SetActive(false);
         middleWall.SetActive(true);
-
-        CurrentMap++;
 
         BallSpawner.Instance.SpawnAllBalls();
 
@@ -42,7 +70,9 @@ public class GameManager : Singleton<GameManager>
             mapIndexTest++;
         }
         else
-            LoadMap.Instance.StartLoad($"Map {CurrentMap}");
+            LoadMap.Instance.StartLoad($"Map {lsMapIndex[CurrentMap]}");
+
+        CurrentMap++;
 
         obstacle.SetActive(true);
         await Task.Delay(3000);

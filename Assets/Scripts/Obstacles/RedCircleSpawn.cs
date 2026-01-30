@@ -1,7 +1,12 @@
 using UnityEngine;
 
-public class RedCircleSpawn : Singleton<RedCircleSpawn>
+public class RedCircleSpawn : MonoBehaviour
 {
+    public static RedCircleSpawn Instance;
+    private void Awake()
+    {
+        Instance = this;
+    }
     public void Spawn(GameObject ball)
     {
         ball.GetComponent<TrailRenderer>().Clear();

@@ -13,11 +13,13 @@ public class UIResult : Singleton<UIResult>
     private Image imgCountry;
     [SerializeField]
     private GameObject panelNext;
+    [SerializeField]
+    private TextMeshProUGUI txtStage;
 
     private Coroutine scaleCoroutine;
 
 
-    public void ShowResult(SpriteRenderer render)
+    public void ShowResult(SpriteRenderer render, bool isGameOver = false)
     {
         if (imgCountry.color.a > 0)
             return;
@@ -28,9 +30,9 @@ public class UIResult : Singleton<UIResult>
         imgCountry.sprite = render.sprite;
         imgCountry.color = Color.white;
 
-        ScaleResultEffect();
+        ScaleResultEffect(isGameOver);
     }
-    private void ScaleResultEffect()
+    private void ScaleResultEffect(bool isGameOver)
     {
         panelResult.transform.localScale = Vector3.one;
 
@@ -40,9 +42,9 @@ public class UIResult : Singleton<UIResult>
             scaleCoroutine = null;
         }
 
-        scaleCoroutine = StartCoroutine(ScaleCoroutine(1f, 1.2f, 3f));
+        scaleCoroutine = StartCoroutine(ScaleCoroutine(1f, 1.2f, 3f, isGameOver));
     }
-    private IEnumerator ScaleCoroutine(float from, float to, float duration)
+    private IEnumerator ScaleCoroutine(float from, float to, float duration, bool isGameOver)
     { 
         Transform t = panelResult.transform;
         float elapsed = 0f;
@@ -61,7 +63,9 @@ public class UIResult : Singleton<UIResult>
         scaleCoroutine = null;
 
         yield return new WaitForSecondsRealtime(1f);
-        EnablePanelNext();
+
+        if (!isGameOver)
+            NextMap_Clicked();
     }
     private void EnablePanelNext()
     {
@@ -77,6 +81,14 @@ public class UIResult : Singleton<UIResult>
         BallSpawner.Instance.BackToPool();
 
         GameManager.Instance.StartNewMap();
-    }
 
+        txtStage.text = $"Stage {GameManager.Instance.CurrentMap}";
+    }
+    public void ShowWinner(SpriteRenderer render)
+    {
+        ShowResult(render, true);
+        txtStage.text = $"Stage 50";
+
+        BallSpawner.Instance.SpawnBallWinner();
+    }
 }

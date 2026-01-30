@@ -21,6 +21,10 @@ public class TriangleMove : MonoBehaviour
     private bool isMoveRight;
     [SerializeField]
     private bool isMoveLeft;
+    [SerializeField]
+    private LayerMask playerLayer;
+    [SerializeField]
+    private bool addForce = false;
 
     private Rigidbody2D rb;
 
@@ -75,6 +79,22 @@ public class TriangleMove : MonoBehaviour
 
                 if (spr != null) spr.enabled = true;
                 if (edgeCol != null) edgeCol.enabled = true;
+            }
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (addForce == false)
+            return;
+
+        if (((1 << col.gameObject.layer) & playerLayer) != 0)
+        {
+            Rigidbody2D ballRb = col.gameObject.GetComponent<Rigidbody2D>();
+            if (ballRb != null)
+            {
+                Vector2 pushDirection = col.contacts[0].point - (Vector2)transform.position;
+
+                ballRb.AddForce(pushDirection.normalized * 500f);
             }
         }
     }

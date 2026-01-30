@@ -88,4 +88,22 @@ public class BallSpawner : Singleton<BallSpawner>
             }
         }
     }
+    public void SpawnBallWinner()
+    {
+        for (int i = 0; i < GameManager.Instance.BallPool.Count; i++)
+        {
+            if (GameManager.Instance.BallPool[i].gameObject.activeInHierarchy)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    BallInfo ball = GameManager.Instance.BallPool[i];
+                    ball.transform.position = Vector3.zero;
+                    ball.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+                    ball.GetComponent<Rigidbody2D>().AddForceY(10f, ForceMode2D.Impulse);
+                    break;
+
+                }
+            }
+        }
+    }
 }
