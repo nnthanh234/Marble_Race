@@ -243,11 +243,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd4ccd3bc4745448892883f0935d4b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  spr: {fileID: 0}
-  edgeCol: {fileID: 0}
+  spr: {fileID: 2757692793234801635}
+  edgeCol: {fileID: 928869024409796176}
   speedMove: 3
   home: -10
   target: 10
   isMoveUp: 0
   isMoveRight: 1
   isMoveLeft: 0
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  addForce: 0

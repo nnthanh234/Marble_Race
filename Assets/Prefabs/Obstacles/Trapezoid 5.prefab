@@ -265,7 +265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Triangle
   spr: {fileID: 3949111201268666078}
   edgeCol: {fileID: 5566542194256013226}
-  speedMove: 3
+  speedMove: 1
   isMoveUp: 1
   isMoveRight: 0
   isMoveLeft: 0

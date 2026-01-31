@@ -84,7 +84,7 @@ SpriteShapeRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_MaskInteraction: 0
   m_Color: {r: 0.5283019, g: 0, b: 0.19579485, a: 1}
   m_ShapeTexture: {fileID: 0}
@@ -247,7 +247,11 @@ MonoBehaviour:
   edgeCol: {fileID: 8665310719164292293}
   speedMove: 3
   home: 8.6
-  target: -0.612999
+  target: 2.2
   isMoveUp: 0
   isMoveRight: 0
   isMoveLeft: 1
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  addForce: 0

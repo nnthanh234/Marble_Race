@@ -7,12 +7,11 @@ using UnityEngine.Networking;
 public class LoadMap : Singleton<LoadMap>
 {
     [SerializeField]
-    private string url = "https://drive.google.com/uc?export=download&id=1wyTq7IeLAyoUDs52JHftW5KI8V03V48r";
-    [SerializeField]
     private GameObject objLoadmap;
     [SerializeField]
     private Transform parentObstacles;
 
+    private string url = "https://drive.google.com/uc?export=download&id=1wyTq7IeLAyoUDs52JHftW5KI8V03V48r";
     private string prefabEditorFolder = "Assets/Prefabs/Obstacles";
     public MapData[] MapsData { get; private set; }
 

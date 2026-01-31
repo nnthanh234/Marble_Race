@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 139766350452038284}
   - component: {fileID: 6386969218362701976}
   - component: {fileID: 2184221246425299865}
+  - component: {fileID: 8977483830664469046}
   m_Layer: 6
   m_Name: YelloCircle 2
   m_TagString: Untagged
@@ -122,12 +123,27 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.50000006
+--- !u!114 &8977483830664469046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455171914626958843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b1641af78fa3484f99239d0331fbf2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BlueCircle
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &3532358428194845126
 GameObject:
   m_ObjectHideFlags: 0
@@ -139,6 +155,7 @@ GameObject:
   - component: {fileID: 645817909177868940}
   - component: {fileID: 6923167099297299726}
   - component: {fileID: 7042346066867116886}
+  - component: {fileID: 3906668159366806204}
   m_Layer: 6
   m_Name: YelloCircle 2
   m_TagString: Untagged
@@ -250,12 +267,27 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.50000006
+--- !u!114 &3906668159366806204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3532358428194845126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b1641af78fa3484f99239d0331fbf2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BlueCircle
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &5358215259371209251
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,7 +379,7 @@ GameObject:
   - component: {fileID: 9197249973648390102}
   - component: {fileID: 7845928497478944348}
   - component: {fileID: 5119813919183831634}
-  - component: {fileID: 5702317387537184493}
+  - component: {fileID: 7841119680086964136}
   m_Layer: 6
   m_Name: YelloCircle 2
   m_TagString: Untagged
@@ -465,7 +497,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.50000006
---- !u!114 &5702317387537184493
+--- !u!114 &7841119680086964136
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
