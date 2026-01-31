@@ -13,8 +13,6 @@ public class UIResult : Singleton<UIResult>
     private Image imgCountry;
     [SerializeField]
     private GameObject panelNext;
-    [SerializeField]
-    private TextMeshProUGUI txtStage;
 
     private Coroutine scaleCoroutine;
 
@@ -81,13 +79,10 @@ public class UIResult : Singleton<UIResult>
         BallSpawner.Instance.BackToPool();
 
         GameManager.Instance.StartNewMap();
-
-        txtStage.text = $"Stage {GameManager.Instance.CurrentMap}";
     }
     public void ShowWinner(SpriteRenderer render)
     {
         ShowResult(render, true);
-        txtStage.text = $"Stage 50";
 
         BallSpawner.Instance.SpawnBallWinner();
     }

@@ -40,25 +40,6 @@ public class GameManager : Singleton<GameManager>
     }
     public async void StartNewMap()
     {
-        if (CurrentMap >= round - 1)
-        {
-            int activeCount = 0;
-            GameObject ball = null;
-            for (int i = 0; i < BallPool.Count; i++)
-            {
-                if (BallPool[i].gameObject.activeInHierarchy)
-                {
-                    ball = BallPool[i].gameObject;
-                    activeCount++;
-                }
-            }
-            if (activeCount == 1)
-            {
-                UIResult.Instance.ShowWinner(ball.GetComponent<SpriteRenderer>());
-                return;
-            }
-        }
-
         redWall.SetActive(false);
         middleWall.SetActive(true);
 
@@ -85,11 +66,13 @@ public class GameManager : Singleton<GameManager>
     public void CheckResult()
     {
         int activeCount = 0;
+        GameObject ball = null;
         for (int i = 0; i < BallPool.Count; i++)
         {
             if (BallPool[i].gameObject.activeInHierarchy)
             {
                 activeCount++;
+                ball = BallPool[i].gameObject;
                 if (activeCount > 1)
                     return;
             }
@@ -97,5 +80,10 @@ public class GameManager : Singleton<GameManager>
 
         redWall.SetActive(true);
         obstacle.SetActive(false);
+
+        if (CurrentMap >= round - 1)
+        {
+            UIResult.Instance.ShowWinner(ball.GetComponent<SpriteRenderer>());
+        }
     }
 }
