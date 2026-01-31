@@ -1115,7 +1115,6 @@ MonoBehaviour:
   txtCountryName: {fileID: 1513261272}
   imgCountry: {fileID: 1506887245}
   panelNext: {fileID: 1397754930}
-  txtStage: {fileID: 1589561406}
 --- !u!1 &1163565448
 GameObject:
   m_ObjectHideFlags: 0
@@ -2384,7 +2383,7 @@ PrefabInstance:
       objectReference: {fileID: 134998116}
     - target: {fileID: 1878414573983737278, guid: 277b9b271b8bc5b45b2d1de14bec7a9e, type: 3}
       propertyPath: mapIndexTest
-      value: 39
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5306028863801390411, guid: 277b9b271b8bc5b45b2d1de14bec7a9e, type: 3}
       propertyPath: m_Name
