@@ -31,7 +31,7 @@ public class GameManager : Singleton<GameManager>
         BallPool = new List<BallInfo>();
 
         lsMapIndex = new List<int>();
-        for (int i = 1; i <= round; i++)
+        for (int i = 1; i <= 100; i++)
         {
             lsMapIndex.Add(i);
         }
