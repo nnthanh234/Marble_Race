@@ -5,6 +5,10 @@ public class Player : MonoBehaviour
 {
     [SerializeField]
     private Rigidbody2D rb;
+    [SerializeField]
+    private AudioSource sound;
+    [SerializeField]
+    private AudioClip[] clips;
 
     private bool isChecking;
     private Coroutine checkCoroutine;
@@ -36,7 +40,12 @@ public class Player : MonoBehaviour
         if (rb.linearVelocity == Vector2.zero)
         {
             rb.position = new Vector2(0f, 4f);
+            sound.PlayOneShot(clips[1]);
         }
         isChecking = false;
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        sound.PlayOneShot(clips[0]);
     }
 }

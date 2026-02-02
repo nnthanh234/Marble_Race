@@ -197,8 +197,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoveBackAndForth
   speedMove: 7
   isRight: 1
-  home: 5.4
-  target: -5.4
+  home: -5.4
+  target: 5.4
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
