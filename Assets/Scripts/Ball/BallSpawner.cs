@@ -15,13 +15,19 @@ public class BallSpawner : Singleton<BallSpawner>
 
     private List<Sprite> flags;
     private bool isFirstStartGame = true;
+    private List<BallInfo> lsCurBall;
+
+    public List<BallInfo> BallInGame { get { return lsCurBall; } }
 
     private void Start()
     {
         flags = new List<Sprite>(lsFlag);
+        lsCurBall = new List<BallInfo>();
     }
     public void SpawnAllBalls()
     {
+        lsCurBall.Clear();
+
         flags.Clear();
         flags.AddRange(lsFlag);
 
@@ -55,6 +61,7 @@ public class BallSpawner : Singleton<BallSpawner>
             Sprite spr = flags[randomIndex];
 
             ball.Init(spr);
+            lsCurBall.Add(ball);
 
             flags.RemoveAt(randomIndex);
         }

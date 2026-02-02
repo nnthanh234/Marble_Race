@@ -26,7 +26,16 @@ public class UIResult : Singleton<UIResult>
 
         string sprName = render.sprite.name.Substring(0, render.sprite.name.Length - 2);
 
-        txtCountryName.text = $"{GameManager.Instance.MapIndex}. {sprName}";
+        if (GameManager.Instance.CurrentMap >= 48)
+        {
+            Debug.Log("Debug");
+        }
+
+        if (isGameOver)
+            txtCountryName.text = $"1. {sprName}";
+        else
+            txtCountryName.text = $"{GameManager.Instance.MapIndex}. {sprName}";
+
         imgCountry.sprite = render.sprite;
         imgCountry.color = Color.white;
 
@@ -76,7 +85,7 @@ public class UIResult : Singleton<UIResult>
     {
         if (GameManager.Instance.CurrentMap >= GameManager.Instance.TotalRound - 1)
         {
-            foreach (var ball in GameManager.Instance.BallPool)
+            foreach (var ball in BallSpawner.Instance.BallInGame)
             {
                 if (!ball.gameObject.activeInHierarchy)
                 {
@@ -95,7 +104,10 @@ public class UIResult : Singleton<UIResult>
     }
     public void ShowWinner(SpriteRenderer render)
     {
+        imgCountry.color = Color.clear;
+
         ShowResult(render, true);
+
         Instantiate(effFirework, Vector3.zero, Quaternion.identity);
     }
 }
