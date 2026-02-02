@@ -20,6 +20,7 @@ public class GameManager : Singleton<GameManager>
     private int mapIndexTest = 0;
 
     public int CurrentMap { get; private set; }
+    public int TotalRound { get { return round; } }
     public List<BallInfo> BallPool { get; private set; }
     public int MapIndex => round - CurrentMap + 1;
 
@@ -80,10 +81,5 @@ public class GameManager : Singleton<GameManager>
 
         redWall.SetActive(true);
         obstacle.SetActive(false);
-
-        if (CurrentMap >= round - 1)
-        {
-            UIResult.Instance.ShowWinner(ball.GetComponent<SpriteRenderer>());
-        }
     }
 }

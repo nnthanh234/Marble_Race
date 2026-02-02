@@ -13,6 +13,8 @@ public class UIResult : Singleton<UIResult>
     private Image imgCountry;
     [SerializeField]
     private GameObject panelNext;
+    [SerializeField]
+    private GameObject effFirework;
 
     private Coroutine scaleCoroutine;
 
@@ -64,6 +66,7 @@ public class UIResult : Singleton<UIResult>
 
         if (!isGameOver)
             NextMap_Clicked();
+
     }
     private void EnablePanelNext()
     {
@@ -71,7 +74,17 @@ public class UIResult : Singleton<UIResult>
     }
     public void NextMap_Clicked()
     {
-        //panelNext.SetActive(false);
+        if (GameManager.Instance.CurrentMap >= GameManager.Instance.TotalRound - 1)
+        {
+            foreach (var ball in GameManager.Instance.BallPool)
+            {
+                if (!ball.gameObject.activeInHierarchy)
+                {
+                    ShowWinner(ball.gameObject.GetComponent<SpriteRenderer>());
+                }
+            }
+            return;
+        }
 
         txtCountryName.text = "";
         imgCountry.color = Color.clear;
@@ -83,7 +96,6 @@ public class UIResult : Singleton<UIResult>
     public void ShowWinner(SpriteRenderer render)
     {
         ShowResult(render, true);
-
-        BallSpawner.Instance.SpawnBallWinner();
+        Instantiate(effFirework, Vector3.zero, Quaternion.identity);
     }
 }

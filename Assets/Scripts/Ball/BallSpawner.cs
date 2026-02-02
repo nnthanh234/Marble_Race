@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using System.Linq;
 
 public class BallSpawner : Singleton<BallSpawner>
 {
@@ -24,6 +25,7 @@ public class BallSpawner : Singleton<BallSpawner>
         flags.Clear();
         flags.AddRange(lsFlag);
 
+        lsPos = lsPos.OrderBy(x => Random.value).ToArray();
         for (int i = 0; i < lsFlag.Count; i++)
         {
             BallInfo ball = null;
@@ -96,12 +98,8 @@ public class BallSpawner : Singleton<BallSpawner>
             {
                 for (int j = 0; j < 10; j++)
                 {
-                    BallInfo ball = GameManager.Instance.BallPool[i];
-                    ball.transform.position = Vector3.zero;
-                    ball.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
-                    ball.GetComponent<Rigidbody2D>().AddForceY(10f, ForceMode2D.Impulse);
-                    break;
-
+                    BallInfo ball = Instantiate(GameManager.Instance.BallPool[i], new Vector3 (Random.Range(-2, 2f), 0f, 0f), Quaternion.identity);
+                    ball.GetComponent<Rigidbody2D>().AddForceY(15f, ForceMode2D.Impulse);
                 }
             }
         }
