@@ -9,9 +9,15 @@ public class GreenCollider : MonoBehaviour
     {
         if (((1 << col.gameObject.layer) & playerLayer) != 0)
         {
-            col.gameObject.SetActive(false);
-
             GameManager.Instance.CheckResult();
+
+            BallInfo ball = col.gameObject.GetComponent<BallInfo>();
+            if (ball != null)
+            {
+                ball.DislayCountry();
+            }
+
+            col.gameObject.SetActive(false);
         }
     }
 }

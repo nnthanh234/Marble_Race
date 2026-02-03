@@ -353,6 +353,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BallInfo
   sprRender: {fileID: 8868238700805433283}
   mask: {fileID: 373209221430313906}
+  txtCountryName: {fileID: 0}
+  canvas: {fileID: 6115841978810452709, guid: e9d052caddeb14e4c8aeddea212c57da, type: 3}
 --- !u!114 &-7436060178307576360
 MonoBehaviour:
   m_ObjectHideFlags: 0
