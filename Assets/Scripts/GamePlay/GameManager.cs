@@ -67,13 +67,11 @@ public class GameManager : Singleton<GameManager>
     public void CheckResult()
     {
         int activeCount = 0;
-        GameObject ball = null;
         for (int i = 0; i < BallPool.Count; i++)
         {
             if (BallPool[i].gameObject.activeInHierarchy)
             {
                 activeCount++;
-                ball = BallPool[i].gameObject;
                 if (activeCount > 1)
                     return;
             }
