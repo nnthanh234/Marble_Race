@@ -32,7 +32,7 @@ public class GameManager : Singleton<GameManager>
         BallPool = new List<BallInfo>();
 
         lsMapIndex = new List<int>();
-        for (int i = 1; i <= 100; i++)
+        for (int i = 1; i <= 250; i++)
         {
             lsMapIndex.Add(i);
         }
