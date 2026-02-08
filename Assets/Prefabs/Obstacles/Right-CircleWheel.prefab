@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 5624241856062360607}
   - component: {fileID: 4223069202032521751}
   - component: {fileID: 2716501905216376650}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Right-CircleWheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,6 +341,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
+  addForce: 1
 --- !u!50 &2716501905216376650
 Rigidbody2D:
   serializedVersion: 5

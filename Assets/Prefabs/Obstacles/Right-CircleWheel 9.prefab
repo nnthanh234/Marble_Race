@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1109452733788359047}
   - component: {fileID: 7159001686226382179}
   - component: {fileID: 2756011927220072911}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Right-CircleWheel 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}

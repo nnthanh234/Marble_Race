@@ -749,7 +749,7 @@ GameObject:
   - component: {fileID: 435137832833704192}
   - component: {fileID: 733566952412689003}
   - component: {fileID: 8654496084553725623}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pinwheel
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -818,6 +818,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
+  addForce: 1
 --- !u!1 &6628636971220527615
 GameObject:
   m_ObjectHideFlags: 0

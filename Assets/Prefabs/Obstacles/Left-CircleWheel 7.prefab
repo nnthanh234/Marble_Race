@@ -876,7 +876,7 @@ GameObject:
   - component: {fileID: 4457915225913547899}
   - component: {fileID: 3627792190220823874}
   - component: {fileID: 6995144303068062963}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Left-CircleWheel 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}

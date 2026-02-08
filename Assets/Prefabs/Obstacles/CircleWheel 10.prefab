@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 2403051259507945911}
   - component: {fileID: 3120233413310169583}
   - component: {fileID: 1389807831029057036}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CircleWheel 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
