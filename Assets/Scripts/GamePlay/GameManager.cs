@@ -54,6 +54,7 @@ public class GameManager : Singleton<GameManager>
         else
             LoadMap.Instance.StartLoad($"Map {lsMapIndex[CurrentMap]}");
 
+        Debug.Log($"Map {lsMapIndex[CurrentMap]}");
         CurrentMap++;
 
         obstacle.SetActive(true);
