@@ -15,9 +15,6 @@ public class RedFloor : MonoBehaviour
                 col.gameObject.GetComponent<TrailRenderer>().enabled = false;
 
                 UIResult.Instance.ShowResult(render);
-
-                BallSpawner.Instance.RemoveFlag(render);
-
             }
         }
     }

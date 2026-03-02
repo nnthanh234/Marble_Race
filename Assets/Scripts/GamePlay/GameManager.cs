@@ -21,7 +21,7 @@ public class GameManager : Singleton<GameManager>
 
     public int CurrentMap { get; private set; }
     public int TotalRound { get { return round; } }
-    public List<BallInfo> BallPool { get; private set; }
+    public List<GameObject> BallPool { get; private set; }
     public int MapIndex => round - CurrentMap + 1;
 
     private List<int> lsMapIndex;
@@ -29,7 +29,7 @@ public class GameManager : Singleton<GameManager>
 
     private void Awake()
     {
-        BallPool = new List<BallInfo>();
+        BallPool = new List<GameObject>();
 
         lsMapIndex = new List<int>();
         for (int i = 1; i <= 400; i++)
@@ -49,21 +49,24 @@ public class GameManager : Singleton<GameManager>
         if (isTest)
         {
             LoadMap.Instance.StartLoad($"Map {mapIndexTest}");
+            Debug.Log($"Map {mapIndexTest}");
             mapIndexTest++;
         }
         else
+        {
             LoadMap.Instance.StartLoad($"Map {lsMapIndex[CurrentMap]}");
-
-        Debug.Log($"Map {lsMapIndex[CurrentMap]}");
+            Debug.Log($"Map {lsMapIndex[CurrentMap]}");
+        }
         CurrentMap++;
 
         obstacle.SetActive(true);
         await Task.Delay(3000);
+ 
         middleWall.SetActive(false);
     }
-    public void AddBall(BallInfo ballInfo)
+    public void AddBall(GameObject ball)
     {
-        BallPool.Add(ballInfo);
+        BallPool.Add(ball);
     }
     public void CheckResult()
     {

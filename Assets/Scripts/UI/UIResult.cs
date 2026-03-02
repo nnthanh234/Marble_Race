@@ -17,19 +17,14 @@ public class UIResult : Singleton<UIResult>
     private GameObject effFirework;
 
     private Coroutine scaleCoroutine;
-
+    private string sName;
 
     public void ShowResult(SpriteRenderer render, bool isGameOver = false)
     {
         if (imgCountry.color.a > 0)
             return;
-
+        sName = render.sprite.name;
         string sprName = render.sprite.name.Substring(0, render.sprite.name.Length - 2);
-
-        if (GameManager.Instance.CurrentMap >= 48)
-        {
-            Debug.Log("Debug");
-        }
 
         if (isGameOver)
             txtCountryName.text = $"1. {sprName}";
@@ -54,7 +49,7 @@ public class UIResult : Singleton<UIResult>
         scaleCoroutine = StartCoroutine(ScaleCoroutine(1f, 1.2f, 3f, isGameOver));
     }
     private IEnumerator ScaleCoroutine(float from, float to, float duration, bool isGameOver)
-    { 
+    {
         Transform t = panelResult.transform;
         float elapsed = 0f;
         t.localScale = Vector3.one * from;
@@ -73,13 +68,11 @@ public class UIResult : Singleton<UIResult>
 
         yield return new WaitForSecondsRealtime(1f);
 
+        BallSpawner.Instance.RemoveFlag(sName);
+
         if (!isGameOver)
             NextMap_Clicked();
 
-    }
-    private void EnablePanelNext()
-    {
-        //panelNext.SetActive(true);
     }
     public void NextMap_Clicked()
     {
@@ -90,9 +83,9 @@ public class UIResult : Singleton<UIResult>
                 if (!ball.gameObject.activeInHierarchy)
                 {
                     ShowWinner(ball.gameObject.GetComponent<SpriteRenderer>());
+                    return;
                 }
             }
-            return;
         }
 
         txtCountryName.text = "";

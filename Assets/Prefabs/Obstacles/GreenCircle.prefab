@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4424310871851731907}
   - component: {fileID: 2841902821950127686}
-  - component: {fileID: 3681493362976394759}
   - component: {fileID: 7728815102315159810}
+  - component: {fileID: 5237611221871954988}
   - component: {fileID: 9034466940812340429}
   m_Layer: 6
   m_Name: GreenCircle
@@ -94,8 +94,35 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!58 &3681493362976394759
-CircleCollider2D:
+--- !u!50 &7728815102315159810
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6741827549849569989}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
+  m_Constraints: 0
+--- !u!68 &5237611221871954988
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,34 +156,37 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
---- !u!50 &7728815102315159810
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6741827549849569989}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 0
-  m_CollisionDetection: 1
-  m_Constraints: 0
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.032295927, y: -0.48842108}
+  - {x: -0.14837855, y: -0.47196028}
+  - {x: -0.24804078, y: -0.4281777}
+  - {x: -0.33776027, y: -0.35857746}
+  - {x: -0.4026082, y: -0.29010502}
+  - {x: -0.47329393, y: -0.14704627}
+  - {x: -0.49262187, y: -0.019886523}
+  - {x: -0.4816931, y: 0.11135792}
+  - {x: -0.43833137, y: 0.23627482}
+  - {x: -0.3511974, y: 0.3464721}
+  - {x: -0.26362076, y: 0.42072418}
+  - {x: -0.14908357, y: 0.4742918}
+  - {x: -0.01319982, y: 0.49510154}
+  - {x: 0.12596682, y: 0.48357582}
+  - {x: 0.2542257, y: 0.42752033}
+  - {x: 0.34976572, y: 0.35184345}
+  - {x: 0.42501047, y: 0.25462914}
+  - {x: 0.4705868, y: 0.1551131}
+  - {x: 0.4941919, y: 0.031077992}
+  - {x: 0.48987326, y: -0.08151366}
+  - {x: 0.44412306, y: -0.21381502}
+  - {x: 0.37601846, y: -0.3220505}
+  - {x: 0.25445175, y: -0.42666766}
+  - {x: 0.12773906, y: -0.47887957}
+  - {x: -0.033986986, y: -0.49126798}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!114 &9034466940812340429
 MonoBehaviour:
   m_ObjectHideFlags: 0

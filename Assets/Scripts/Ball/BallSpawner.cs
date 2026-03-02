@@ -10,8 +10,6 @@ public class BallSpawner : Singleton<BallSpawner>
     private Transform[] lsPos;
     [SerializeField]
     private List<Sprite> lsFlag;
-    [SerializeField]
-    private int ballCount = 50;
 
     private List<Sprite> flags;
     private bool isFirstStartGame = true;
@@ -39,7 +37,7 @@ public class BallSpawner : Singleton<BallSpawner>
             if (isFirstStartGame)
             {
                 ball = Instantiate(ballPrefab, lsPos[i].position, Quaternion.identity);
-                GameManager.Instance.AddBall(ball);
+                GameManager.Instance.AddBall(ball.gameObject);
             }
             else
             {
@@ -47,7 +45,7 @@ public class BallSpawner : Singleton<BallSpawner>
                 if (ball == null)
                 {
                     ball = Instantiate(ballPrefab, lsPos[i].position, Quaternion.identity);
-                    GameManager.Instance.AddBall(ball);
+                    GameManager.Instance.AddBall(ball.gameObject);
                 }
                 else
                 {
@@ -74,7 +72,7 @@ public class BallSpawner : Singleton<BallSpawner>
         {
             if (!GameManager.Instance.BallPool[j].gameObject.activeInHierarchy)
             {
-                return GameManager.Instance.BallPool[j];
+                return GameManager.Instance.BallPool[j].GetComponent<BallInfo>();
             }
         }
         return null;
@@ -86,14 +84,28 @@ public class BallSpawner : Singleton<BallSpawner>
             GameManager.Instance.BallPool[i].gameObject.SetActive(false);
         }
     }
-    public void RemoveFlag(SpriteRenderer render)
+    public void RemoveFlag(string sName)
     {
         for (int i = 0; i < lsFlag.Count; i++)
         {
-            if (lsFlag[i].name == render.sprite.name)
+            if (lsFlag[i].name == sName)
             {
                 lsFlag.RemoveAt(i);
+                RemoveBall(sName);
                 break;
+            }
+        }
+    }
+    private void RemoveBall(string nameBall)
+    {
+        nameBall = nameBall.Substring(0, nameBall.Length - 2);
+        for (int i = 0; i < GameManager.Instance.BallPool.Count; i++)
+        {
+            if (GameManager.Instance.BallPool[i].GetComponent<BallInfo>().NameBall.Equals(nameBall))
+            {
+                Destroy(GameManager.Instance.BallPool[i]);
+                GameManager.Instance.BallPool.RemoveAt(i);
+                return;
             }
         }
     }
@@ -105,7 +117,7 @@ public class BallSpawner : Singleton<BallSpawner>
             {
                 for (int j = 0; j < 10; j++)
                 {
-                    BallInfo ball = Instantiate(GameManager.Instance.BallPool[i], new Vector3 (Random.Range(-2, 2f), 0f, 0f), Quaternion.identity);
+                    BallInfo ball = Instantiate(GameManager.Instance.BallPool[i], new Vector3(Random.Range(-2, 2f), 0f, 0f), Quaternion.identity).GetComponent<BallInfo>();
                     ball.GetComponent<Rigidbody2D>().AddForceY(15f, ForceMode2D.Impulse);
                 }
             }

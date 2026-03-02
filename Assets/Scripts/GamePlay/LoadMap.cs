@@ -42,11 +42,9 @@ public class LoadMap : Singleton<LoadMap>
                 var prefab = AssetDatabase.LoadAssetAtPath<GameObject>(prefabPath);
                 if (prefab != null)
                 {
-                    var instantiated = PrefabUtility.InstantiatePrefab(prefab, transform);
-                    go = instantiated as GameObject;
+                    go = Instantiate(prefab, parentObstacles);
                     if (go != null)
                     {
-                        go.transform.parent = parentObstacles;
                         go.transform.position = od.Transform != null ? od.Transform.Position : Vector3.zero;
                         go.transform.rotation = od.Transform != null ? Quaternion.Euler(od.Transform.Rotation) : Quaternion.identity;
                         go.transform.localScale = od.Transform != null ? od.Transform.Scale : Vector3.one;
@@ -64,8 +62,6 @@ public class LoadMap : Singleton<LoadMap>
                 go.transform.localScale = od.Transform != null ? od.Transform.Scale : Vector3.one;
             }
         }
-
-        Debug.Log($"Map loaded successed!");
     }
     private MapData GetMapData(string mapName)
     {
