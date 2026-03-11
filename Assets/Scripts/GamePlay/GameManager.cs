@@ -61,7 +61,7 @@ public class GameManager : Singleton<GameManager>
 
         obstacle.SetActive(true);
         await Task.Delay(3000);
- 
+
         middleWall.SetActive(false);
     }
     public void AddBall(GameObject ball)
@@ -83,5 +83,11 @@ public class GameManager : Singleton<GameManager>
 
         redWall.SetActive(true);
         obstacle.SetActive(false);
+
+        if (activeCount == 0)
+        {
+            UIResult.Instance.ShowResult(GreenCollider.finishLs.Peek());
+            GreenCollider.finishLs.Clear();
+        }
     }
 }

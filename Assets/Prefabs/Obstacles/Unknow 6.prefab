@@ -88,8 +88,8 @@ SpriteShapeRenderer:
   m_ShapeTexture: {fileID: 0}
   m_Sprites: []
   m_LocalAABB:
-    m_Center: {x: -2.676946, y: -0.7080097, z: 0}
-    m_Extent: {x: 1.3431752, y: 2.671176, z: 0}
+    m_Center: {x: -2.679123, y: -0.24560785, z: 0}
+    m_Extent: {x: 1.3453522, y: 3.1335778, z: 0}
   m_SpriteSortPoint: 0
 --- !u!114 &7113553159499560496
 MonoBehaviour:
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
-    - position: {x: -4.011952, y: 1.9631664, z: 0}
+    - position: {x: -4.024475, y: 2.8879697, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0

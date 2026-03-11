@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7089277876448119721, guid: 3b94547056fa05149ba98523433e4600, type: 3}
       propertyPath: rotationSpeed
-      value: 300
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 8867248060700129609, guid: 3b94547056fa05149ba98523433e4600, type: 3}
       propertyPath: m_Points.Array.size

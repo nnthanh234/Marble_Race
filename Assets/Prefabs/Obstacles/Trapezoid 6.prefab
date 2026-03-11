@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5248175370633495272}
   - component: {fileID: 8731863825230100010}
   - component: {fileID: 6577052529682480367}
+  - component: {fileID: 2758123877872275263}
   m_Layer: 6
   m_Name: Trapezoid 6
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.4168553, y: -1.6706343, z: 0}
-  m_LocalScale: {x: 2.4818904, y: 9.002013, z: 2.684939}
+  m_LocalScale: {x: 1.178898, y: 9.002013, z: 2.684939}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -88,8 +89,8 @@ SpriteShapeRenderer:
   m_ShapeTexture: {fileID: 0}
   m_Sprites: []
   m_LocalAABB:
-    m_Center: {x: 0.60406524, y: -0.113150924, z: 0}
-    m_Extent: {x: 0.73810637, y: 0.32869, z: 0}
+    m_Center: {x: 0.60406524, y: -0.18533304, z: 0}
+    m_Extent: {x: 0.73810637, y: 0.25650787, z: 0}
   m_SpriteSortPoint: 0
 --- !u!114 &8731863825230100010
 MonoBehaviour:
@@ -122,7 +123,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 1.3240608, y: 0.2155391, z: 0}
+    - position: {x: 1.3116391, y: 0.07117481, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -162,7 +163,7 @@ MonoBehaviour:
   m_ColliderSegment:
   - {x: -0.13367435, y: -0.4407345}
   - {x: -0.13404112, y: 0.029542232}
-  - {x: 1.3240608, y: 0.2155391}
+  - {x: 1.3116391, y: 0.07117481}
   - {x: 1.3421717, y: -0.44184092}
   - {x: -0.13367435, y: -0.4407345}
   m_ShadowSegment: []
@@ -205,10 +206,27 @@ EdgeCollider2D:
   m_Points:
   - {x: -0.13367435, y: -0.4407345}
   - {x: -0.13404112, y: 0.029542232}
-  - {x: 1.3240608, y: 0.2155391}
+  - {x: 1.3116391, y: 0.07117481}
   - {x: 1.3421717, y: -0.44184092}
   - {x: -0.13367435, y: -0.4407345}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!111 &2758123877872275263
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2191470256306962523}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: a4b37e2b9d1b2924f95b645470ff35f1, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: a4b37e2b9d1b2924f95b645470ff35f1, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0

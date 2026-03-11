@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   spr: {fileID: 1097408955651366962}
-  amout: 5
+  amout: 2
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
