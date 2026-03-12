@@ -831,7 +831,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &772577621
 RectTransform:
   m_ObjectHideFlags: 0
@@ -908,7 +908,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &921215716
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2403,7 +2403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1878414573983737278, guid: 277b9b271b8bc5b45b2d1de14bec7a9e, type: 3}
       propertyPath: isTest
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1878414573983737278, guid: 277b9b271b8bc5b45b2d1de14bec7a9e, type: 3}
       propertyPath: redWall
@@ -2419,7 +2419,7 @@ PrefabInstance:
       objectReference: {fileID: 134998116}
     - target: {fileID: 1878414573983737278, guid: 277b9b271b8bc5b45b2d1de14bec7a9e, type: 3}
       propertyPath: mapIndexTest
-      value: 352
+      value: 325
       objectReference: {fileID: 0}
     - target: {fileID: 5306028863801390411, guid: 277b9b271b8bc5b45b2d1de14bec7a9e, type: 3}
       propertyPath: m_Name
