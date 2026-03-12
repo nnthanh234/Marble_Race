@@ -48,13 +48,27 @@ public class GameManager : Singleton<GameManager>
 
         if (isTest)
         {
-            LoadMap.Instance.StartLoad($"Map {mapIndexTest}");
+            bool loadSuccessed = LoadMap.Instance.StartLoad($"Map {mapIndexTest}");
+            while (loadSuccessed == false)
+            {
+                mapIndexTest++;
+                loadSuccessed = LoadMap.Instance.StartLoad($"Map {mapIndexTest}");
+
+                await Task.Yield();
+            }
             Debug.Log($"Map {mapIndexTest}");
             mapIndexTest++;
         }
         else
         {
-            LoadMap.Instance.StartLoad($"Map {lsMapIndex[CurrentMap]}");
+            bool loadSuccessed = LoadMap.Instance.StartLoad($"Map {lsMapIndex[CurrentMap]}");
+            while (loadSuccessed == false)
+            {
+                CurrentMap++;
+                loadSuccessed = LoadMap.Instance.StartLoad($"Map {lsMapIndex[CurrentMap]}");
+
+                await Task.Yield();
+            }
             Debug.Log($"Map {lsMapIndex[CurrentMap]}");
         }
         CurrentMap++;

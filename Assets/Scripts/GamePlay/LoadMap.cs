@@ -20,13 +20,13 @@ public class LoadMap : Singleton<LoadMap>
     {
         StartDownload();
     }
-    public void StartLoad(string mapName)
+    public bool StartLoad(string mapName)
     {
         MapData mapData = GetMapData(mapName);
         if (mapData == null)
         {
-            Debug.LogError("Map Data is null");
-            return;
+            Debug.Log($"{mapName} is null");
+            return false;
         }
 
         DestroyChidren();
@@ -61,7 +61,9 @@ public class LoadMap : Singleton<LoadMap>
                 go.transform.rotation = od.Transform != null ? Quaternion.Euler(od.Transform.Rotation) : Quaternion.identity;
                 go.transform.localScale = od.Transform != null ? od.Transform.Scale : Vector3.one;
             }
+
         }
+        return true;
     }
     private MapData GetMapData(string mapName)
     {

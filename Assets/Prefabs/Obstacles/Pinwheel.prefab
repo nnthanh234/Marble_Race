@@ -814,7 +814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24937c64da5ed5d4caa6e856e2cca802, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstaclesRotate
-  rotationSpeed: 200
+  rotationSpeed: 100
   playerLayer:
     serializedVersion: 2
     m_Bits: 128

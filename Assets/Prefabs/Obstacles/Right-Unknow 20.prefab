@@ -664,7 +664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a382d838df9e2414ba7c316631b2248f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  speedMove: 12
+  speedMove: 3
   isRight: 1
   home: -7.4
   target: 7.4
