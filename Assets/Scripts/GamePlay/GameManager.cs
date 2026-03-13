@@ -17,7 +17,7 @@ public class GameManager : Singleton<GameManager>
     [SerializeField]
     private bool isTest;
     [SerializeField]
-    private int mapIndexTest = 0;
+    private int mapIndex = 0;
 
     public int CurrentMap { get; private set; }
     public int TotalRound { get { return round; } }
@@ -48,28 +48,29 @@ public class GameManager : Singleton<GameManager>
 
         if (isTest)
         {
-            bool loadSuccessed = LoadMap.Instance.StartLoad($"Map {mapIndexTest}");
+            bool loadSuccessed = LoadMap.Instance.StartLoad($"Map {mapIndex}");
             while (loadSuccessed == false)
             {
-                mapIndexTest++;
-                loadSuccessed = LoadMap.Instance.StartLoad($"Map {mapIndexTest}");
+                mapIndex++;
+                loadSuccessed = LoadMap.Instance.StartLoad($"Map {mapIndex}");
 
                 await Task.Yield();
             }
-            Debug.Log($"Map {mapIndexTest}");
-            mapIndexTest++;
+            Debug.Log($"Map {mapIndex}");
+            mapIndex++;
         }
         else
         {
-            bool loadSuccessed = LoadMap.Instance.StartLoad($"Map {lsMapIndex[CurrentMap]}");
+            bool loadSuccessed = LoadMap.Instance.StartLoad($"Map {lsMapIndex[mapIndex]}");
             while (loadSuccessed == false)
             {
-                CurrentMap++;
-                loadSuccessed = LoadMap.Instance.StartLoad($"Map {lsMapIndex[CurrentMap]}");
+                mapIndex++;
+                loadSuccessed = LoadMap.Instance.StartLoad($"Map {lsMapIndex[mapIndex]}");
 
                 await Task.Yield();
             }
-            Debug.Log($"Map {lsMapIndex[CurrentMap]}");
+            Debug.Log($"Map {lsMapIndex[mapIndex]}");
+            mapIndex++;
         }
         CurrentMap++;
 
