@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e0116dc218b3424b8dad5ac49339d10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstaclesMapSaver
-  mapName: Map 460
+  mapName: Map 467
   fileName: ListMap_2
 --- !u!1 &134998116
 GameObject:
@@ -397,7 +397,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -2403,7 +2403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1878414573983737278, guid: 277b9b271b8bc5b45b2d1de14bec7a9e, type: 3}
       propertyPath: isTest
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1878414573983737278, guid: 277b9b271b8bc5b45b2d1de14bec7a9e, type: 3}
       propertyPath: redWall
@@ -2419,7 +2419,7 @@ PrefabInstance:
       objectReference: {fileID: 134998116}
     - target: {fileID: 1878414573983737278, guid: 277b9b271b8bc5b45b2d1de14bec7a9e, type: 3}
       propertyPath: mapIndexTest
-      value: 325
+      value: 96
       objectReference: {fileID: 0}
     - target: {fileID: 5306028863801390411, guid: 277b9b271b8bc5b45b2d1de14bec7a9e, type: 3}
       propertyPath: m_Name

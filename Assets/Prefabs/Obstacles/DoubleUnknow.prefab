@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45c3fb99fd439014fa118f34f5075bcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  speedMove: 10
+  speedMove: 5
   isRight: 1
   playerLayer:
     serializedVersion: 2
