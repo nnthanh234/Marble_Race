@@ -245,4 +245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DoubleUnknow
   speedMove: 10
   isRight: 0
-  distance: 3
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  distance: 7
