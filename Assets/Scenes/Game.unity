@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e0116dc218b3424b8dad5ac49339d10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstaclesMapSaver
-  mapName: Map 540
+  mapName: Map 558
   fileName: ListMap_2
 --- !u!1 &134998116
 GameObject:
@@ -908,7 +908,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &921215716
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2411,7 +2411,7 @@ PrefabInstance:
       objectReference: {fileID: 1557443367}
     - target: {fileID: 1878414573983737278, guid: 277b9b271b8bc5b45b2d1de14bec7a9e, type: 3}
       propertyPath: mapIndex
-      value: 240
+      value: 508
       objectReference: {fileID: 0}
     - target: {fileID: 1878414573983737278, guid: 277b9b271b8bc5b45b2d1de14bec7a9e, type: 3}
       propertyPath: obstacle
