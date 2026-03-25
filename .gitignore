@@ -99,3 +99,12 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# Project version
+/[Pp]roject[Ss]ettings/[Pp]rojectVersion*.txt*
+
+#Render
+/[Aa]ssets/[Ss]ettings/[Uu]niversal[Rr]ender[Pp]ipeline[Gg]lobal[Ss]ettings.asset
+
+
+
