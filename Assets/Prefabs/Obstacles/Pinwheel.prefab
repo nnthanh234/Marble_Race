@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1901522650297126977}
   - component: {fileID: 18720863298477897}
   - component: {fileID: 2317118461125464426}
-  - component: {fileID: 3287876639881286024}
   m_Layer: 6
   m_Name: Triangle
   m_TagString: Untagged
@@ -231,21 +230,6 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &3287876639881286024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2754609108088728997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b1641af78fa3484f99239d0331fbf2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BlueCircle
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 128
 --- !u!1 &3086762550358023945
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,7 +243,6 @@ GameObject:
   - component: {fileID: 1898169353469115644}
   - component: {fileID: 8488236740797265040}
   - component: {fileID: 9179718239769383638}
-  - component: {fileID: 4920701611842052966}
   m_Layer: 6
   m_Name: Triangle (2)
   m_TagString: Untagged
@@ -477,21 +460,6 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &4920701611842052966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3086762550358023945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b1641af78fa3484f99239d0331fbf2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BlueCircle
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 128
 --- !u!1 &3589996642953200892
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,7 +473,6 @@ GameObject:
   - component: {fileID: 5592811463630517617}
   - component: {fileID: 5152917943844314366}
   - component: {fileID: 3417629448054076673}
-  - component: {fileID: 8701537130706703968}
   m_Layer: 6
   m_Name: Triangle (1)
   m_TagString: Untagged
@@ -723,21 +690,6 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &8701537130706703968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3589996642953200892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b1641af78fa3484f99239d0331fbf2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BlueCircle
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 128
 --- !u!1 &3968212958779824120
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,7 +784,6 @@ GameObject:
   - component: {fileID: 7991836679959385978}
   - component: {fileID: 1074477771277096868}
   - component: {fileID: 4570397704320139695}
-  - component: {fileID: 292779638303618518}
   m_Layer: 6
   m_Name: Triangle (3)
   m_TagString: Untagged
@@ -1050,18 +1001,3 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &292779638303618518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6628636971220527615}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b1641af78fa3484f99239d0331fbf2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BlueCircle
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 128
